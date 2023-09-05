@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Style the input containers */
+        .input-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px; 
+        }
+
+       
+        label {
+            flex: 1;
+            margin-right: 10px; /* Add horizontal spacing between label and input */
+            text-align: right;
+        }
+
+        /* Style the input elements */
+        input[type="text"],
+        input[type="password"],
+        textarea,
+        input[type="number"] {
+            flex: 2; 
+            padding: 10px;
+            width: 100%;
+        }
+
+        
+        .radio-group {
+            flex: 2;
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px; 
+        }
+
+       
+        input[type="submit"] {
+            display: inline-flex;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+        <div class="input-container">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div class="input-container">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="input-container">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="input-container">
+            <label for="repassword">Re-enter Password:</label>
+            <input type="password" id="repassword" name="repassword" required>
+        </div>
+
+        <div class="input-container">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+
+        <div class="input-container">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+
+        <div class="input-container">
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+            </div>
+        </div>
+
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>
