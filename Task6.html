@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+</head>
+<style>
+    /* Center the table horizontally and vertically */
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    /* Optional: Add some styles to the table for better visibility */
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        max-width: 600px;
+        background-color: #21b2ef;
+        border: 1px solid #ccc;
+    }
+
+    th {
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #21b2ef;
+        color: #000000;
+    }
+
+    /* Add CSS boxes to each td element with shape designs */
+    td {
+        border: 1px solid #000; /* Border style */
+        padding: 5px; /* Padding inside each td */
+        text-align: center; /* Center-align text */
+        background-color: #b3ecff; /* Background color */
+        position: relative;
+    }
+
+    /* Shape designs for each column */
+    .column-shape-1 {
+        background-image: radial-gradient(circle, #ff6347, transparent);
+    }
+
+    .column-shape-2 {
+        background-image: linear-gradient(to right, #00bfff, transparent);
+    }
+
+    .column-shape-3 {
+        background-image: repeating-linear-gradient(-45deg, #20b2aa, #20b2aa 10px, transparent 10px, transparent 20px);
+    }
+
+    /* Circles around text */
+    .text-circle {
+        position: relative;
+    }
+
+    .text-circle::before {
+        content: "";
+        width: 40px;
+        height: 40px;
+        background-color: #000;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+</style>
+<body>
+<table bgcolor="#b3ecff" border="1" align="center" cellspacing="3" WIDTH=500 HEIGHT=200>
+    <thead>
+    <th class="column-shape-1">First Name</th>
+    <th class="column-shape-2">Last Name</th>
+    <th class="column-shape-3">Age</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="text-circle">Jill</td>
+        <td class="text-circle">Smith</td>
+        <td class="text-circle">50</td>
+    </tr>
+    <tr>
+        <td class="text-circle">Eve</td>
+        <td class="text-circle">Jackson</td>
+        <td class="text-circle">94</td>
+    </tr>
+    <tr>
+        <td class="text-circle">John</td>
+        <td class="text-circle">Doe</td>
+        <td class="text-circle">80</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
