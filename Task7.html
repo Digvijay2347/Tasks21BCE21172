@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task7css</title>
+<head>
+    <style>
+        /* Center the container */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Style the navigation box */
+        .navigation-box {
+            width: 250px;
+            background-color: #4eb0d0;
+            padding: 20px;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin-right: 20px;
+            border: 2px solid rgb(0, 0, 0);
+        }
+
+        /* Style the navigation links */
+        .navigation-box a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            transition: background-color 0.3s;
+        }
+
+        /* Change the link color on hover */
+        .navigation-box a:hover {
+            background-color: #dcea1a;
+        }
+
+        /* Style the horizontal navigation bar */
+        .horizontal-navbar {
+            background-color: #4eb0d0;
+            padding: 10px;
+            color: rgb(0, 0, 0);
+            border-radius: 0px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border: 2px solid rgb(0, 0, 0);
+        }
+
+        .horizontal-navbar td {
+            padding: 10px;
+        }
+
+        /* Style the horizontal navigation links */
+        .horizontal-navbar a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            transition: background-color 0.3s;
+        }
+
+        /* Change the link color on hover */
+        
+
+        .horizontal-navbar td:hover {
+            background-color: #555;
+            transform: scale(1.1); /* Increase size on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Vertical Navigation Box -->
+        <div class="navigation-box">
+            <a href="#"><h3>Home</h3></a>
+            <a href="#">JAVA</a>
+            <a href="#">CSS</a>
+            <a href="#">HTML</a>
+            <a href="#">Bootstrap</a>
+        </div>
+
+        <!-- Horizontal Navigation Bar -->
+        <table class="horizontal-navbar">
+            <tr>
+                <td><a href="#">Home</a></td>
+                <td><a href="#">About</a></td>
+                <td><a href="#">Services</a></td>
+                <td><a href="#">Portfolio</a></td>
+                <td><a href="#">Contact</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
