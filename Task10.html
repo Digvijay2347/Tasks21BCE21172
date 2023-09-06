@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task10css</title>
+</head>
+    <style>
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Main content styles */
+        .content-box {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #e9f62b;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            display: flex;
+        }
+
+        /* Add margin to create space for the menu on the left */
+        .content-box .left-content {
+            flex: 3;
+            padding-right: 20px;
+        }
+
+        /* Text styles */
+        h1 {
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            transition: text-shadow 0.3s, transform 0.3s;
+        }
+
+        /* Apply the glow effect and zoom with smooth transition */
+        h1:hover {
+            text-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
+            transform: scale(1.1);
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        /* Button styles */
+       
+
+        /* Menu styles */
+        .menu {
+            list-style-type: none;
+            padding: 2;
+            position: relative;
+            flex: 1;
+            border: 1px solid #000000; /* Add a border around the menu */
+            border-radius: 5px; /* Add rounded corners */
+            
+            padding: 11px; /* Add padding inside the menu */
+        }
+
+        .menu li a {
+            margin: 10px 0;
+            color: #000000;
+            
+        }
+
+        .menu a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <div class="left-content">
+            <h1>My First Styled Page</h1>
+
+            <h2>Welcome to my styled page!</h2>
+            <p>This is a simple example of a styled webpage. You can modify the styles and content to create your own unique page.</p>
+
+            <h2>About Me</h2>
+            <p>I'm a web developer passionate about creating beautiful and functional websites.</p>
+
+            <h2>Contact</h2>
+            <p>Feel free to <a href="mailto:your.email@example.com">email me</a> if you have any questions or inquiries.</p>
+
+            <div class="interesting-facts">
+                <h2>Interesting Facts</h2>
+                <div class="fact">
+                    <p><strong>Fact 1:</strong> I love coding and solving complex problems.</p>
+                </div>
+                <div class="fact">
+                    <p><strong>Fact 2:</strong> I enjoy outdoor activities like hiking and camping.</p>
+                </div>
+                <div class="fact">
+                    <p><strong>Fact 3:</strong> I'm a foodie and love trying new cuisines.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menu placed inside the content-box -->
+        <ul class="menu">
+            <li><a href="#"><b>HOME</b></a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">My Town</a></li>
+            <li><a href="#">Links</a></li>
+          
+        </ul>
+    </div>
+</body>
+</html>
