@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task9css</title>
+</head>
+    <style>
+        /* Style the container */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Style the neb box */
+        .neb-box {
+            width: 400px;
+            height: 300px;
+            background-color: #c4a8a8;
+            position: relative;
+            overflow: hidden;
+            border-radius: 9px;
+        }
+
+        /* Style the side navigation */
+        .side-nav {
+            position: absolute;
+            top: 0;
+            left: -100px; /* Hide the navigation initially */
+            width: 100px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: left 0.9s;
+        }
+
+        /* Style the side navigation buttons */
+        .side-nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+            width: 100px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        /* Change the button color on hover */
+        .side-nav a:hover {
+            background-color: #555;
+            
+        }
+
+        /* Show the side navigation on hover */
+        .neb-box:hover .side-nav {
+            left: 0;
+        }
+        .welcome-text{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Neb Box -->
+        <div class="neb-box">
+            <div class="welcome-text"><h1>Hoverable Sidenav Buttons</h1></div>
+            <!-- Side Navigation -->
+            <div class="side-nav">
+                <a href="#" style="background-color: #ff5733;"><span>Button 1 </span></a>
+                
+                <a href="#" style="background-color: #33ff57;"><span>Button 2 </span></a>
+                <a href="#" style="background-color: #5733ff;"><span>Button 3 </span></a>
+                <a href="#" style="background-color: #ff3399;"><span>Button 4 </span></a>
+                <a href="#" style="background-color: #33ffff;"><span>Button 5 </span></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
